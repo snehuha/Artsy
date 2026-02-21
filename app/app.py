@@ -15,10 +15,10 @@ st.set_page_config(
 # -------------------- LOAD DATA --------------------
 @st.cache_data
 def load_data():
-    with open("../model/features.pkl", "rb") as f:
+    with open("model/features.pkl", "rb") as f:
         features = pickle.load(f)
 
-    with open("../model/image_paths.pkl", "rb") as f:
+    with open("model/image_paths.pkl", "rb") as f:
         image_paths = pickle.load(f)
 
     return features, image_paths
